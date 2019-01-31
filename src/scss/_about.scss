@@ -1,12 +1,16 @@
 .about {
+  line-height: 2;
+
   &__me,
   &__the-site {
+    margin: 0 auto;
     background-image: $faded-slightly;
     border: $default-border;
     border-radius: 1rem;
     padding: 2rem;
     margin-bottom: 5rem;
     align-items: center;
+    max-width: 100rem;
 
     h2 {
       text-align: center;
@@ -18,16 +22,53 @@
     grid-template-columns: 25rem 1fr;
     grid-template-rows: 6rem 1fr;
 
+    @media only screen and (max-width: $bp-medium) {
+      grid-template-rows: 8rem 20rem 1fr;
+    }
+
     h2 {
       grid-column: 1/-1;
+      grid-row: 1/2;
     }
 
     &--pic1 {
-      border-radius: 10%;
+      display: block;
+      border: 2px solid white;
+      border-radius: 1rem;
+      box-shadow: 0 0 2rem rgba(0, 0, 0, 1);
       width: 20rem;
+      transition: all 0.5s;
+      align-self: flex-start;
+      grid-row: 2/3;
+
+      @media only screen and (max-width: $bp-medium) {
+        grid-column: 1/-1;
+        justify-self: center;
+      }
+
+      &:hover {
+        border: 5px solid dodgerblue;
+        transform: scale(1.1);
+        transition: all 0.5s;
+      }
+    }
+
+    span {
+      grid-row: -2/-1;
+
+      @media only screen and (max-width: $bp-medium) {
+        grid-column: 1/-1;
+      }
     }
   }
 
   &__the-site {
+    &--info {
+      margin-top: 3rem;
+    }
+
+    li {
+      margin: 2rem;
+    }
   }
 }
