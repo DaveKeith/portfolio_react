@@ -1,0 +1,63 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 50%; //1rem = 8px
+  }
+}
+
+body {
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.content {
+  margin: 0 auto;
+  padding: 8rem;
+  max-width: 180rem;
+  min-height: 100vh;
+  font-size: 1.6rem;
+  background-image: $faded-heavily, url("./imgs/the-blends-2-1156219.jpg");
+  background-position: center;
+  background-repeat: repeat-y;
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 4rem;
+  }
+  @media only screen and (max-width: $bp-smallest) {
+    padding: 1rem;
+  }
+}
+
+h1 {
+  text-align: center;
+  font-size: 6rem;
+  font-weight: 300;
+  margin-bottom: 5rem;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+ul {
+  margin-left: 2rem;
+
+  li {
+    list-style: inside;
+  }
+}

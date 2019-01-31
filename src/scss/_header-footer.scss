@@ -1,0 +1,54 @@
+header,
+footer {
+  background-color: dodgerblue;
+  padding: 2rem 0 2rem 0;
+
+  nav {
+    color: white;
+    margin: 0 auto;
+    width: 60rem;
+    display: flex;
+    justify-content: space-between;
+
+    @media only screen and (max-width: $bp-small) {
+      width: 32rem;
+    }
+
+    a {
+      color: inherit;
+      font-size: 1.6rem;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+  }
+}
+
+footer {
+  .footer-section {
+    width: 40%;
+
+    img {
+      width: 5rem;
+      margin: 1rem;
+
+      @media only screen and (max-width: $bp-small) {
+        width: 3rem;
+      }
+    }
+
+    .contact-type {
+      font-size: 1.6rem;
+      font-weight: 700;
+      padding: 0 1rem 0 1rem;
+    }
+
+    .contact-info {
+      font-size: 1.4rem;
+
+      @media only screen and (max-width: $bp-medium) {
+        padding-left: 2rem;
+        display: block;
+      }
+    }
+  }
+}

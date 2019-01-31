@@ -1,0 +1,23 @@
+$faded-heavily: linear-gradient(
+  rgba(255, 255, 255, 0.9),
+  rgba(255, 255, 255, 0.9)
+);
+$faded-slightly: linear-gradient(
+  rgba(255, 255, 255, 0.5),
+  rgba(255, 255, 255, 0.5)
+);
+
+$default-border: 3px solid silver;
+
+//RESPONSIVE BREAKPOINTS
+$bp-largest: 75em; //1200px
+$bp-large: 62.5em; //1000px
+$bp-medium: 50em; //800px
+$bp-small: 37.5em; //600px
+$bp-smallest: 25em; //400px
+
+@import "scss/about.scss";
+@import "scss/base.scss";
+@import "scss/experience.scss";
+@import "scss/header-footer.scss";
+@import "scss/projects.scss";

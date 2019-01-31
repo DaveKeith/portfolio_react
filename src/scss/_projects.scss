@@ -1,0 +1,50 @@
+.projects {
+  margin: 0 auto;
+  max-width: 100rem;
+
+  &__section {
+    margin: 3rem 0 3rem 0;
+    border: $default-border;
+    border-radius: 1rem;
+    padding: 2rem;
+    background-image: $faded-slightly;
+
+    div {
+      margin: 1rem;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  &__intro {
+    margin: 0 auto;
+    width: 60%;
+  }
+
+  &__diversey {
+    &--examples {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+
+  &__github {
+    &--example-list {
+      width: 100%;
+      display: block;
+      // display: grid;
+      // grid-template-columns: repeat(3, 1fr);
+      // justify-content: space-around;
+    }
+
+    &--example {
+      padding: 1rem;
+    }
+  }
+}

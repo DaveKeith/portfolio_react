@@ -1,0 +1,61 @@
+.experience {
+  &__intro,
+  &__place {
+    padding: 2rem 10rem 2rem 10rem;
+    margin: 0 10rem 0 10rem;
+    line-height: 2;
+    background-image: $faded-slightly;
+    border: $default-border;
+    border-radius: 1rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      padding: 0 1rem 0 1rem;
+      margin: 0 1rem 0 1rem;
+    }
+  }
+
+  &__navbar {
+    padding: 2rem;
+    margin: 5rem 0 5rem 0;
+    border-top: 4px solid lightgrey;
+    border-bottom: 4px solid lightgrey;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 2rem;
+    align-items: center;
+    background-image: $faded-heavily;
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 4rem 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+      font-weight: 600;
+      font-size: 2rem;
+      color: darkslategrey;
+      transition: all 0.5s;
+      text-align: center;
+
+      &:hover {
+        color: black;
+        transform: scale(1.1);
+        transition: all 0.5s;
+      }
+    }
+  }
+
+  &__place {
+    margin-top: 5rem;
+
+    &--name {
+      font-weight: 600;
+    }
+
+    &--info {
+      margin-left: 2rem;
+    }
+  }
+}
