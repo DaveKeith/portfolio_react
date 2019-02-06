@@ -1,0 +1,192 @@
+{
+  "projects": [
+    {
+      "projectId": 1,
+      "projectName": "Product Selector",
+      "project": [
+        {
+          "name": "Start/Home",
+          "urlTemplate": "http://www.diverseydigital.com/natools/productselector/",
+          "actualUrl": "http://www.diverseydigital.com/natools/productselector/",
+          "img": ""
+        },
+        {
+          "name": "Decision 1",
+          "urlTemplate": "http://www.diverseydigital.com/natools/productselector/?decision1=<decision1-param>",
+          "actualUrl": "http://www.diverseydigital.com/natools/productselector/?decision1=Personal%20Care",
+          "img": ""
+        },
+        {
+          "name": "Decision 2+",
+          "urlTemplate": "http://www.diverseydigital.com/natools/productselector/?decision1=<decision1-param>&decision2=<decision2-param>",
+          "actualUrl": "http://www.diverseydigital.com/natools/productselector/?decision1=Dilution%20Control%20Systems&decision2=Kitchen%20Care%20Dispensers",
+          "img": ""
+        },
+        {
+          "name": "Decision 2+ with Tags",
+          "urlTemplate": "http://www.diverseydigital.com/natools/productselector/?decision1=<decision1-param>&decision2=<decision2-param>",
+          "actualUrl": "http://www.diverseydigital.com/natools/productselector/?decision1=Dilution%20Control%20Systems&decision2=Kitchen%20Care%20Dispensers",
+          "img": ""
+        },
+        {
+          "name": "Product Page",
+          "urlTemplate": "http://www.diverseydigital.com/natools/productselector/?decision1=<decision1-param>&decision2=<decision2-param>&dbid=<dbid-param>",
+          "actualUrl": "http://www.diverseydigital.com/natools/productselector/?decision1=Dilution%20Control%20Systems&decision2=Kitchen%20Care%20Dispensers&dbid=21",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "projectId": 2,
+      "projectName": "Dilution Calculator",
+      "project": [
+        {
+          "name": "Start/Home",
+          "urlTemplate": "http://www.diverseydigital.com/natools/dilutioncalculator",
+          "actualUrl": "http://www.diverseydigital.com/natools/dilutioncalculator",
+          "img": ""
+        },
+        {
+          "name": "Four Params",
+          "urlTemplate": "http://www.diverseydigital.com/natools/dilutioncalculator/?brand=<brand-param>&category=<category-param>&product=<product-param>&dilution_ratio=<dilution_ratio-param>",
+          "actualUrl": "http://www.diverseydigital.com/natools/dilutioncalculator/?brand=Accumix&category=Floor%20Maintainers%20and%20Strippers&product=REVIVE%20PLUS%20SC%20Cleaner%20Restorer&dilution_ratio=1:128",
+          "img": ""
+        },
+        {
+          "name": "Ready to Submit",
+          "urlTemplate": "http://www.diverseydigital.com/natools/dilutioncalculator/?brand=<brand-param>&category=<category-param>&product=<product-param>&dilution_ratio=<dilution_ratio-param>",
+          "actualUrl": "http://www.diverseydigital.com/natools/dilutioncalculator/?brand=Accumix&category=Floor%20Maintainers%20and%20Strippers&product=REVIVE%20PLUS%20SC%20Cleaner%20Restorer&dilution_ratio=1:128",
+          "img": ""
+        },
+        {
+          "name": "One Result",
+          "urlTemplate": "http://www.diverseydigital.com/natools/dilutioncalculator/?result1=<result-params>#result",
+          "actualUrl": "http://www.diverseydigital.com/natools/dilutioncalculator/?result1=REVIVE%20PLUS%20SC%20Cleaner%20Restorer+dilution1+100#result",
+          "img": ""
+        },
+        {
+          "name": "Three Results",
+          "urlTemplate": "http://www.diverseydigital.com/natools/dilutioncalculator/?result1=<result1-params>&result2=<result2-params>&result3=<result3-params>#result",
+          "actualUrl": "http://www.diverseydigital.com/natools/dilutioncalculator/?result1=REVIVE%20PLUS%20SC%20Cleaner%20Restorer+dilution1+100&result2=CREW%20NA%20SC%20Non-Acid%20Disinfectant%20Cleaner+dilution1+100&result3=Suma%20Supreme%20Pot%20%26%20Pan%20Detergent+dilution1+100#result",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "projectId": 3,
+      "projectName": "Floor Care Solutions",
+      "project": [
+        {
+          "name": "Start/Home/Troubleshooting",
+          "urlTemplate": "http://www.diverseydigital.com/natools/FloorCareSolutions/",
+          "actualUrl": "http://www.diverseydigital.com/natools/FloorCareSolutions/",
+          "img": ""
+        },
+        {
+          "name": "Troubleshooting Info Page",
+          "urlTemplate": "http://www.diverseydigital.com/natools/FloorCareSolutions/troubleshooting.php?problem=<problem-param>",
+          "actualUrl": "http://www.diverseydigital.com/natools/FloorCareSolutions/troubleshooting.php?problem=Black%20Heel%20Mark",
+          "img": ""
+        },
+        {
+          "name": "Substrates",
+          "urlTemplate": "http://www.diverseydigital.com/natools/FloorCareSolutions/substrates.php",
+          "actualUrl": "http://www.diverseydigital.com/natools/FloorCareSolutions/substrates.php",
+          "img": ""
+        },
+        {
+          "name": "Substrates Info Page",
+          "urlTemplate": "http://www.diverseydigital.com/natools/FloorCareSolutions/substrates.php?problem=<problem-param>",
+          "actualUrl": "http://www.diverseydigital.com/natools/FloorCareSolutions/substrates.php?problem=Marble",
+          "img": ""
+        },
+        {
+          "name": "PDF",
+          "urlTemplate": "http://www.diverseydigital.com/natools/FloorCareSolutions/padselection.php",
+          "actualUrl": "http://www.diverseydigital.com/natools/FloorCareSolutions/padselection.php",
+          "img": ""
+        },
+        {
+          "name": "Floor Care Calculator",
+          "urlTemplate": "http://www.diverseydigital.com/natools/FloorCareSolutions/calculator.php",
+          "actualUrl": "http://www.diverseydigital.com/natools/FloorCareSolutions/calculator.php",
+          "img": ""
+        },
+        {
+          "name": "Floor Finish Data Specifications",
+          "urlTemplate": "http://www.diverseydigital.com/natools/FloorCareSolutions/calculator.php?sqft=<sqft-param>&cat=<cat-param>&coats=<coats-param>",
+          "actualUrl": "http://www.diverseydigital.com/natools/FloorCareSolutions/calculator.php?sqft=1000&cat=Floor%20Finish&coats=10",
+          "img": ""
+        },
+        {
+          "name": "Floor Care Calculator",
+          "urlTemplate": "http://www.diverseydigital.com/natools/FloorCareSolutions/calculator.php",
+          "actualUrl": "http://www.diverseydigital.com/natools/FloorCareSolutions/calculator.php",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "projectId": 4,
+      "projectName": "Inside the Park",
+      "githubUrl": "https://github.com/insidethepark/RB",
+      "deploymentUrl": "http://tiy-2016q1-danielrevo-inside-the-park.surge.sh/",
+      "project": [
+        {
+          "name": "Login",
+          "img": "../imgs/inside-the-park/login.jpg"
+        },
+        {
+          "name": "Pick a date to begin",
+          "img": "../imgs/inside-the-park/initial_calendar.jpg"
+        },
+        {
+          "name": "Pick a game for the first day",
+          "img": "../imgs/inside-the-park/choose_first_game.jpg"
+        },
+        {
+          "name": "Pick a game for the next day",
+          "img": "../imgs/inside-the-park/choose_second_game.jpg"
+        },
+        {
+          "name": "Pick more games",
+          "img": "../imgs/inside-the-park/choose_third_game.jpg"
+        },
+        {
+          "name": "Final Itinerary",
+          "img": "../imgs/inside-the-park/final_itinerary.jpg"
+        }
+      ]
+    },
+    {
+      "projectId": 5,
+      "projectName": "The Spoon",
+      "githubUrl": "https://github.com/ttsdobc-dseb-proj01/recipe-list",
+      "deploymentUrl": "http://the-spoon.herokuapp.com/",
+      "project": [
+        {
+          "name": "Home",
+          "img": "../imgs/the-spoon/home.png"
+        },
+        {
+          "name": "Create Recipe",
+          "img": "../imgs/the-spoon/create-recipe.png"
+        },
+        {
+          "name": "Recipe List",
+          "img": "../imgs/the-spoon/recipe-list.png"
+        },
+        {
+          "name": "View Recipe",
+          "img": "../imgs/the-spoon/view-recipe.png"
+        }
+      ]
+    },
+    {
+      "projectId": 6,
+      "projectName": "Workout App",
+      "githubUrl": "https://github.com/workoutApp",
+      "project": [{}]
+    }
+  ]
+}

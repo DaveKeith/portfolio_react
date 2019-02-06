@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from "react";
 import { Link } from "react-router-dom";
 
-import DaveKeith from "../imgs/davekeithpic.jpg";
+//import DaveKeith from "../imgs/davekeithpic.jpg";
 
 const About = () => {
   return (
@@ -10,7 +10,11 @@ const About = () => {
       <div className="about">
         <div className="about__me">
           <h2>About Me</h2>
-          <img src={DaveKeith} className="about__me--pic1" alt="davekeith1" />
+          <img
+            src="../imgs/davekeithpic.jpg"
+            className="about__me--pic1"
+            alt="davekeith1"
+          />
           <span>
             Hi, I'm Dave Keith (I go by David as well but davidkeith wasn't
             available as a github account when I signed up). I'm a software

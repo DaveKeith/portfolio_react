@@ -47,7 +47,12 @@ h1 {
 
 h2 {
   font-size: 3rem;
-  font-weight: 400;
+  text-align: center;
+  font-weight: 600;
+  background-image: linear-gradient(to bottom, #1e90ff 40%, #444);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 h4 {
@@ -59,5 +64,12 @@ ul {
 
   li {
     list-style: inside;
+  }
+}
+
+.navbar {
+  a {
+    text-decoration: none;
+    text-align: center;
   }
 }

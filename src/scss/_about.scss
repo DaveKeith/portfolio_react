@@ -40,6 +40,7 @@
       transition: all 0.5s;
       align-self: flex-start;
       grid-row: 2/3;
+      transition: all 0.5s;
 
       @media only screen and (max-width: $bp-medium) {
         grid-column: 1/-1;
@@ -47,9 +48,10 @@
       }
 
       &:hover {
-        border: 5px solid dodgerblue;
+        border: none;
         transform: scale(1.1);
-        transition: all 0.5s;
+        margin-bottom: 1px;
+        transition: transform 0.5s;
       }
     }
 
