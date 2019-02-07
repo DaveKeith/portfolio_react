@@ -46,7 +46,7 @@ class App extends Component {
         key={project.projectId}
         target="_self"
       >
-        {project.name}
+        {project.projectName}
       </Link>
     ));
   }
