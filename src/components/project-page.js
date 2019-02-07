@@ -1,12 +1,12 @@
 import React, { Component, Fragment } from "react";
 import { Link } from "react-router-dom";
-import ProjectPageData from "../json/project-page.json";
+import Data from "../json/data.json";
 
 class ProjectPage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: ProjectPageData.projects.find(project => {
+      data: Data.projects.find(project => {
         return project.projectId == this.props.projectId;
       })
     };
@@ -15,12 +15,12 @@ class ProjectPage extends Component {
   topUrls(obj) {
     if (obj.githubUrl && obj.deploymentUrl) {
       return (
-        <div className="image-div__links-container">
-          <div className="image-div__header-link">
+        <div className="project-description__links-container">
+          <div className="project-description__header-link">
             <span>GitHub URL:</span>
             <a href={obj.githubUrl}>{obj.githubUrl}</a>
           </div>
-          <div className="image-div__header-link">
+          <div className="project-description__header-link">
             <span>Deployment URL:</span>
             <a href={obj.deploymentUrl}>{obj.deploymentUrl}</a>
           </div>
@@ -28,8 +28,8 @@ class ProjectPage extends Component {
       );
     } else if (obj.githubUrl) {
       return (
-        <div className="image-div__links-container">
-          <div className="image-div__header-link">
+        <div className="project-description__links-container">
+          <div className="project-description__header-link">
             <span>GitHub URL:</span>
             <a href={obj.githubUrl}>{obj.githubUrl}</a>
           </div>
@@ -65,7 +65,10 @@ class ProjectPage extends Component {
     return (
       <Fragment>
         <h1>{this.state.data.projectName}</h1>
-        {this.topUrls(this.state.data)}
+        <div className="project-description">
+          {this.state.data.description}
+          {this.topUrls(this.state.data)}
+        </div>
         <div id="image-grid">
           {this.state.data.project.map(image => (
             <Link to={image.img} target="_self" className="image-div">

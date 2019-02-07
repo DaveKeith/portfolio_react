@@ -2,7 +2,9 @@
   "projects": [
     {
       "projectId": 1,
+      "workplace": "Diversey",
       "projectName": "Product Selector",
+      "description": "Utilizes a database of approximately 500 products, allowing a user to filter the list and find the right product for their needs, get a description, and links to the product page.",
       "project": [
         {
           "name": "Home",
@@ -33,7 +35,9 @@
     },
     {
       "projectId": 2,
+      "workplace": "Diversey",
       "projectName": "Dilution Calculator",
+      "description": "Allows a user to filter down to a specific product, name their price, and then generate results indicating how much they are paying for different volumes of water mixed with the diluted chemical.",
       "project": [
         {
           "name": "Home",
@@ -64,7 +68,9 @@
     },
     {
       "projectId": 3,
+      "workplace": "Diversey",
       "projectName": "Floor Care Solutions",
+      "description": "Displays real world examples of floor problems, allowing a user to select the problem of their chosing, and see a description of the solution, usually consisting of a cooresponding Diversey product to help with that solution.",
       "project": [
         {
           "name": "Home/Troubleshooting",
@@ -108,6 +114,7 @@
       "projectName": "Inside the Park",
       "githubUrl": "https://github.com/insidethepark/RB",
       "deploymentUrl": "http://tiy-2016q1-danielrevo-inside-the-park.surge.sh/",
+      "description": "A Ruby on Rails application that allows a user to create an itinerary and fill it with events (baseball games) extracted from an API. The user could choose a day and an event from that day, which would allow the application to show the next day’s events, continuing until the user stops adding events. The user will then be able to view their itinerary with all the details related to the events scheduled for each day.",
       "project": [
         {
           "name": "Login",
@@ -140,6 +147,7 @@
       "projectName": "The Spoon",
       "githubUrl": "https://github.com/ttsdobc-dseb-proj01/recipe-list",
       "deploymentUrl": "http://the-spoon.herokuapp.com/",
+      "description": "A Java Spring-Boot application that allows users to share recipes. It allows users to create recipes, taking into account the ingredients and steps needed to create the recipe. Additionally, the user can browse a list of recipes select one, and read, update, or delete.",
       "project": [
         {
           "name": "Home",
@@ -163,6 +171,7 @@
       "projectId": 6,
       "projectName": "Workout App",
       "githubUrl": "https://github.com/workoutApp",
+      "description": "A MEAN stack (MongoDB, ExpressJS, AngularIO, NodeJS) application that allows a user to create a workout schedule, and then read, update, or delete workouts. A workout is scheduled for a particular day and includes a set of exercises.",
       "project": [
         {
           "name": "Home",

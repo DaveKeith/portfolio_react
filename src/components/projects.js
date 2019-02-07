@@ -1,13 +1,17 @@
 import React, { Component, Fragment } from "react";
-import ProjectElemData from "../json/project-element.json";
+import Data from "../json/data.json";
 import ProjectElement from "./project-element";
 
 class Projects extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      diversey: ProjectElemData.diversey,
-      github: ProjectElemData.github
+      diversey: Data.projects.filter(project => {
+        return project.workplace === "Diversey";
+      }),
+      github: Data.projects.filter(project => {
+        return !project.workplace;
+      })
     };
   }
 
@@ -42,7 +46,7 @@ class Projects extends Component {
                 <ProjectElement
                   key={project.projectId}
                   id={project.projectId}
-                  name={project.name}
+                  name={project.projectName}
                   description={project.description}
                 />
               ))}
@@ -60,7 +64,7 @@ class Projects extends Component {
                 <ProjectElement
                   key={project.projectId}
                   id={project.projectId}
-                  name={project.name}
+                  name={project.projectName}
                   description={project.description}
                 />
               ))}
