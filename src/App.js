@@ -13,7 +13,7 @@ class App extends Component {
     super(props);
     this.state = {
       dropdownElem: "hide",
-      projectList: Data
+      projectList: Data.projects
     };
     this.hideAllDropdowns = this.hideAllDropdowns.bind(this);
     this.projectsDropdown = this.projectsDropdown.bind(this);
