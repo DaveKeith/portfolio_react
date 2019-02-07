@@ -5,7 +5,7 @@
       "projectName": "Product Selector",
       "project": [
         {
-          "name": "Start/Home",
+          "name": "Home",
           "urlTemplate": "http://www.diverseydigital.com/natools/productselector/",
           "actualUrl": "http://www.diverseydigital.com/natools/productselector/",
           "img": ""
@@ -17,13 +17,13 @@
           "img": ""
         },
         {
-          "name": "Decision 2+",
+          "name": "Decision 2",
           "urlTemplate": "http://www.diverseydigital.com/natools/productselector/?decision1=<decision1-param>&decision2=<decision2-param>",
           "actualUrl": "http://www.diverseydigital.com/natools/productselector/?decision1=Dilution%20Control%20Systems&decision2=Kitchen%20Care%20Dispensers",
           "img": ""
         },
         {
-          "name": "Decision 2+ with Tags",
+          "name": "Decision 2 with Tags",
           "urlTemplate": "http://www.diverseydigital.com/natools/productselector/?decision1=<decision1-param>&decision2=<decision2-param>",
           "actualUrl": "http://www.diverseydigital.com/natools/productselector/?decision1=Dilution%20Control%20Systems&decision2=Kitchen%20Care%20Dispensers",
           "img": ""
@@ -41,7 +41,7 @@
       "projectName": "Dilution Calculator",
       "project": [
         {
-          "name": "Start/Home",
+          "name": "Home",
           "urlTemplate": "http://www.diverseydigital.com/natools/dilutioncalculator",
           "actualUrl": "http://www.diverseydigital.com/natools/dilutioncalculator",
           "img": ""

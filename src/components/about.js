@@ -43,7 +43,7 @@ const About = () => {
               <li>
                 JSON - Using JSON input to fill state properties in a React
                 application is a very important skill, so I thought I'd go ahead
-                and include an example on this site (in the Projects page).
+                and include an example on this site (under the Projects tab).
               </li>
             </ul>
           </div>
