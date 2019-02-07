@@ -6,14 +6,14 @@ import About from "./components/about";
 import Projects from "./components/projects";
 import Experience from "./components/experience";
 import ProjectPage from "./components/project-page";
-import ProjectElemData from "./json/project-element.json";
+import Data from "./json/data.json";
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
       dropdownElem: "hide",
-      projectList: ProjectElemData.diversey.concat(ProjectElemData.github)
+      projectList: Data
     };
     this.hideAllDropdowns = this.hideAllDropdowns.bind(this);
     this.projectsDropdown = this.projectsDropdown.bind(this);
