@@ -6,33 +6,28 @@
       "project": [
         {
           "name": "Home",
-          "urlTemplate": "http://www.diverseydigital.com/natools/productselector/",
-          "actualUrl": "http://www.diverseydigital.com/natools/productselector/",
-          "img": ""
+          "url": "http://www.diverseydigital.com/natools/productselector/",
+          "img": "../imgs/product-selector/home.png"
         },
         {
           "name": "Decision 1",
-          "urlTemplate": "http://www.diverseydigital.com/natools/productselector/?decision1=<decision1-param>",
-          "actualUrl": "http://www.diverseydigital.com/natools/productselector/?decision1=Personal%20Care",
-          "img": ""
+          "url": "http://www.diverseydigital.com/natools/productselector/?decision1=Personal%20Care",
+          "img": "../imgs/product-selector/decision1.png"
         },
         {
           "name": "Decision 2",
-          "urlTemplate": "http://www.diverseydigital.com/natools/productselector/?decision1=<decision1-param>&decision2=<decision2-param>",
-          "actualUrl": "http://www.diverseydigital.com/natools/productselector/?decision1=Dilution%20Control%20Systems&decision2=Kitchen%20Care%20Dispensers",
-          "img": ""
+          "url": "http://www.diverseydigital.com/natools/productselector/?decision1=Dilution%20Control%20Systems&decision2=Kitchen%20Care%20Dispensers",
+          "img": "../imgs/product-selector/decision2.png"
         },
         {
           "name": "Decision 2 with Tags",
-          "urlTemplate": "http://www.diverseydigital.com/natools/productselector/?decision1=<decision1-param>&decision2=<decision2-param>",
-          "actualUrl": "http://www.diverseydigital.com/natools/productselector/?decision1=Dilution%20Control%20Systems&decision2=Kitchen%20Care%20Dispensers",
-          "img": ""
+          "url": "http://www.diverseydigital.com/natools/productselector/?decision1=Dilution%20Control%20Systems&decision2=Kitchen%20Care%20Dispensers",
+          "img": "../imgs/product-selector/decisions-with-tags.png"
         },
         {
           "name": "Product Page",
-          "urlTemplate": "http://www.diverseydigital.com/natools/productselector/?decision1=<decision1-param>&decision2=<decision2-param>&dbid=<dbid-param>",
-          "actualUrl": "http://www.diverseydigital.com/natools/productselector/?decision1=Dilution%20Control%20Systems&decision2=Kitchen%20Care%20Dispensers&dbid=21",
-          "img": ""
+          "url": "http://www.diverseydigital.com/natools/productselector/?decision1=Dilution%20Control%20Systems&decision2=Kitchen%20Care%20Dispensers&dbid=21",
+          "img": "../imgs/product-selector/product.png"
         }
       ]
     },
@@ -42,33 +37,28 @@
       "project": [
         {
           "name": "Home",
-          "urlTemplate": "http://www.diverseydigital.com/natools/dilutioncalculator",
-          "actualUrl": "http://www.diverseydigital.com/natools/dilutioncalculator",
-          "img": ""
+          "url": "http://www.diverseydigital.com/natools/dilutioncalculator",
+          "img": "../imgs/dilution-calculator/home.png"
         },
         {
           "name": "Four Params",
-          "urlTemplate": "http://www.diverseydigital.com/natools/dilutioncalculator/?brand=<brand-param>&category=<category-param>&product=<product-param>&dilution_ratio=<dilution_ratio-param>",
-          "actualUrl": "http://www.diverseydigital.com/natools/dilutioncalculator/?brand=Accumix&category=Floor%20Maintainers%20and%20Strippers&product=REVIVE%20PLUS%20SC%20Cleaner%20Restorer&dilution_ratio=1:128",
-          "img": ""
+          "url": "http://www.diverseydigital.com/natools/dilutioncalculator/?brand=Accumix&category=Floor%20Maintainers%20and%20Strippers&product=REVIVE%20PLUS%20SC%20Cleaner%20Restorer&dilution_ratio=1:128",
+          "img": "../imgs/dilution-calculator/four-params.png"
         },
         {
           "name": "Ready to Submit",
-          "urlTemplate": "http://www.diverseydigital.com/natools/dilutioncalculator/?brand=<brand-param>&category=<category-param>&product=<product-param>&dilution_ratio=<dilution_ratio-param>",
-          "actualUrl": "http://www.diverseydigital.com/natools/dilutioncalculator/?brand=Accumix&category=Floor%20Maintainers%20and%20Strippers&product=REVIVE%20PLUS%20SC%20Cleaner%20Restorer&dilution_ratio=1:128",
-          "img": ""
+          "url": "http://www.diverseydigital.com/natools/dilutioncalculator/?brand=Accumix&category=Floor%20Maintainers%20and%20Strippers&product=REVIVE%20PLUS%20SC%20Cleaner%20Restorer&dilution_ratio=1:128",
+          "img": "../imgs/dilution-calculator/ready-to-submit.png"
         },
         {
           "name": "One Result",
-          "urlTemplate": "http://www.diverseydigital.com/natools/dilutioncalculator/?result1=<result-params>#result",
-          "actualUrl": "http://www.diverseydigital.com/natools/dilutioncalculator/?result1=REVIVE%20PLUS%20SC%20Cleaner%20Restorer+dilution1+100#result",
-          "img": ""
+          "url": "http://www.diverseydigital.com/natools/dilutioncalculator/?result1=REVIVE%20PLUS%20SC%20Cleaner%20Restorer+dilution1+100#result",
+          "img": "../imgs/dilution-calculator/one-result.png"
         },
         {
           "name": "Three Results",
-          "urlTemplate": "http://www.diverseydigital.com/natools/dilutioncalculator/?result1=<result1-params>&result2=<result2-params>&result3=<result3-params>#result",
-          "actualUrl": "http://www.diverseydigital.com/natools/dilutioncalculator/?result1=REVIVE%20PLUS%20SC%20Cleaner%20Restorer+dilution1+100&result2=CREW%20NA%20SC%20Non-Acid%20Disinfectant%20Cleaner+dilution1+100&result3=Suma%20Supreme%20Pot%20%26%20Pan%20Detergent+dilution1+100#result",
-          "img": ""
+          "url": "http://www.diverseydigital.com/natools/dilutioncalculator/?result1=REVIVE%20PLUS%20SC%20Cleaner%20Restorer+dilution1+100&result2=CREW%20NA%20SC%20Non-Acid%20Disinfectant%20Cleaner+dilution1+100&result3=Suma%20Supreme%20Pot%20%26%20Pan%20Detergent+dilution1+100#result",
+          "img": "../imgs/dilution-calculator/three-results.png"
         }
       ]
     },
@@ -77,52 +67,39 @@
       "projectName": "Floor Care Solutions",
       "project": [
         {
-          "name": "Start/Home/Troubleshooting",
-          "urlTemplate": "http://www.diverseydigital.com/natools/FloorCareSolutions/",
-          "actualUrl": "http://www.diverseydigital.com/natools/FloorCareSolutions/",
-          "img": ""
+          "name": "Home/Troubleshooting",
+          "url": "http://www.diverseydigital.com/natools/FloorCareSolutions/",
+          "img": "../imgs/floor-care-solutions/home.png"
         },
         {
           "name": "Troubleshooting Info Page",
-          "urlTemplate": "http://www.diverseydigital.com/natools/FloorCareSolutions/troubleshooting.php?problem=<problem-param>",
-          "actualUrl": "http://www.diverseydigital.com/natools/FloorCareSolutions/troubleshooting.php?problem=Black%20Heel%20Mark",
-          "img": ""
+          "url": "http://www.diverseydigital.com/natools/FloorCareSolutions/troubleshooting.php?problem=Black%20Heel%20Mark",
+          "img": "../imgs/floor-care-solutions/troubleshooting-info.png"
         },
         {
           "name": "Substrates",
-          "urlTemplate": "http://www.diverseydigital.com/natools/FloorCareSolutions/substrates.php",
-          "actualUrl": "http://www.diverseydigital.com/natools/FloorCareSolutions/substrates.php",
-          "img": ""
+          "url": "http://www.diverseydigital.com/natools/FloorCareSolutions/substrates.php",
+          "img": "../imgs/floor-care-solutions/substrates.png"
         },
         {
           "name": "Substrates Info Page",
-          "urlTemplate": "http://www.diverseydigital.com/natools/FloorCareSolutions/substrates.php?problem=<problem-param>",
-          "actualUrl": "http://www.diverseydigital.com/natools/FloorCareSolutions/substrates.php?problem=Marble",
-          "img": ""
+          "url": "http://www.diverseydigital.com/natools/FloorCareSolutions/substrates.php?problem=Marble",
+          "img": "../imgs/floor-care-solutions/substrates-info.png"
         },
         {
           "name": "PDF",
-          "urlTemplate": "http://www.diverseydigital.com/natools/FloorCareSolutions/padselection.php",
-          "actualUrl": "http://www.diverseydigital.com/natools/FloorCareSolutions/padselection.php",
-          "img": ""
+          "url": "http://www.diverseydigital.com/natools/FloorCareSolutions/padselection.php",
+          "img": "../imgs/floor-care-solutions/pdf.png"
         },
         {
           "name": "Floor Care Calculator",
-          "urlTemplate": "http://www.diverseydigital.com/natools/FloorCareSolutions/calculator.php",
-          "actualUrl": "http://www.diverseydigital.com/natools/FloorCareSolutions/calculator.php",
-          "img": ""
+          "url": "http://www.diverseydigital.com/natools/FloorCareSolutions/calculator.php",
+          "img": "../imgs/floor-care-solutions/calc.png"
         },
         {
           "name": "Floor Finish Data Specifications",
-          "urlTemplate": "http://www.diverseydigital.com/natools/FloorCareSolutions/calculator.php?sqft=<sqft-param>&cat=<cat-param>&coats=<coats-param>",
-          "actualUrl": "http://www.diverseydigital.com/natools/FloorCareSolutions/calculator.php?sqft=1000&cat=Floor%20Finish&coats=10",
-          "img": ""
-        },
-        {
-          "name": "Floor Care Calculator",
-          "urlTemplate": "http://www.diverseydigital.com/natools/FloorCareSolutions/calculator.php",
-          "actualUrl": "http://www.diverseydigital.com/natools/FloorCareSolutions/calculator.php",
-          "img": ""
+          "url": "http://www.diverseydigital.com/natools/FloorCareSolutions/calculator.php?sqft=1000&cat=Floor%20Finish&coats=10",
+          "img": "../imgs/floor-care-solutions/calc-results.png"
         }
       ]
     },

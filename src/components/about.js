@@ -46,6 +46,10 @@ const About = () => {
                 and include an example on this site (under the Projects tab).
               </li>
             </ul>
+            <h5>GitHub URL: </h5>
+            <a href="https://github.com/DaveKeith/portfolio_react">
+              https://github.com/DaveKeith/portfolio_react
+            </a>
           </div>
         </div>
       </div>

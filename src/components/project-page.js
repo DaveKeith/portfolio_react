@@ -38,39 +38,19 @@ class ProjectPage extends Component {
   }
 
   secUrls(image) {
-    if (image.urlTemplate) {
-      if (image.urlTemplate === image.actualUrl) {
-        return (
-          <Fragment>
-            <div className="image-div__section">
-              <h5>Url: </h5>
-              <a href={image.actualUrl} target="_blank">
-                {image.actualUrl}
-              </a>
-            </div>
-            <div className="image-div__section">
-              <img src={image.img} />
-            </div>
-          </Fragment>
-        );
-      } else {
-        return (
-          <Fragment>
-            <div className="image-div__section">
-              <h5>Url Template:</h5> {image.urlTemplate}
-            </div>
-            <div className="image-div__section">
-              <h5>Example Url: </h5>
-              <a href={image.actualUrl} target="_blank">
-                {image.actualUrl}
-              </a>
-            </div>
-            <div className="image-div__section">
-              <img src={image.img} />
-            </div>
-          </Fragment>
-        );
-      }
+    if (image.url) {
+      return (
+        <Fragment>
+          <div className="image-div__section">
+            <a href={image.url} target="_blank">
+              {image.url}
+            </a>
+          </div>
+          <div className="image-div__section">
+            <img src={image.img} />
+          </div>
+        </Fragment>
+      );
     } else {
       return (
         <div className="image-div__section">
