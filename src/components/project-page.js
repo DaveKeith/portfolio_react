@@ -29,8 +29,8 @@ class ProjectPage extends Component {
     } else if (obj.githubUrl) {
       return (
         <div className="image-div__links-container">
-          <span>GitHub URL:</span>
           <div className="image-div__header-link">
+            <span>GitHub URL:</span>
             <a href={obj.githubUrl}>{obj.githubUrl}</a>
           </div>
         </div>
