@@ -28,11 +28,12 @@ class ProjectPage extends Component {
       );
     } else if (obj.githubUrl) {
       return (
-        <Fragment>
+        <div className="image-div__links-container">
+          <span>GitHub URL:</span>
           <div className="image-div__header-link">
             <a href={obj.githubUrl}>{obj.githubUrl}</a>
           </div>
-        </Fragment>
+        </div>
       );
     }
   }
