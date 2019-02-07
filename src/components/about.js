@@ -32,18 +32,25 @@ const About = () => {
               <li>
                 ReactJS - This is a single page application, using React routing
                 functionality and generates HTML by means of JS-based
-                components. Runs a server on GitHub Pages utilizing the
-                dependency, "gh-pages".
+                components. As the URL indicates, Heroku has allowed us to
+                deploy this React application and function as intended.
               </li>
               <li>
                 SCSS - Using the "node-sass" dependency we can utilize SASS
                 functionality such as nested statements, variables, and imports
-                in order to make the stylesheets more readable.
+                in order to make the stylesheets more readable. Additionally,
+                mobile devices represent the majority of users for many
+                different websites, so being able to create a responsive site
+                that can function on a variety of screens is extremely
+                important. This site works on desktop, mobile, and even for very
+                large screens used for presentations. Browser compatibility has
+                been taken into consideration as well.
               </li>
               <li>
                 JSON - Using JSON input to fill state properties in a React
-                application is a very important skill, so I thought I'd go ahead
-                and include an example on this site (under the Projects tab).
+                application and provide more automated functionality to the site
+                is a very important skill, so I thought I'd go ahead and include
+                an example on this site (under the Projects tab).
               </li>
             </ul>
             <h5>GitHub URL: </h5>
