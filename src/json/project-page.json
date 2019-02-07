@@ -186,7 +186,20 @@
       "projectId": 6,
       "projectName": "Workout App",
       "githubUrl": "https://github.com/workoutApp",
-      "project": [{}]
+      "project": [
+        {
+          "name": "Home",
+          "img": "../imgs/workout-app/home.png"
+        },
+        {
+          "name": "Create Workout",
+          "img": "../imgs/workout-app/create-workout.png"
+        },
+        {
+          "name": "Workout List",
+          "img": "../imgs/workout-app/workout-list.png"
+        }
+      ]
     }
   ]
 }
