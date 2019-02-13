@@ -8,6 +8,15 @@ footer {
     #aaddff 110%
   );
 
+  @media only screen and (max-width: $bp-medium) {
+    background-image: linear-gradient(
+      to right,
+      #aaddff -25%,
+      #1e90ff,
+      #aaddff 125%
+    );
+  }
+
   nav {
     color: white;
     margin: 0 auto;
@@ -50,9 +59,17 @@ footer {
     img {
       width: 5rem;
       margin: 1rem;
+      filter: drop-shadow(0.2rem 0.2rem 0.2rem rgb(0, 0, 0));
+      transition: all 0.5s;
 
       @media only screen and (max-width: $bp-small) {
         width: 3rem;
+      }
+
+      &:hover {
+        filter: drop-shadow(0.7rem 0.7rem 0.7rem rgb(0, 0, 0));
+        transform: translateY(-0.5rem);
+        transition: all 0.5s;
       }
     }
 

@@ -12,6 +12,10 @@
     align-items: center;
     max-width: 100rem;
 
+    * {
+      animation: grow 1s;
+    }
+
     h2 {
       text-align: center;
     }
@@ -24,6 +28,7 @@
 
     @media only screen and (max-width: $bp-medium) {
       grid-template-rows: 8rem 20rem 1fr;
+      grid-row-gap: 3rem;
     }
 
     h2 {
@@ -32,15 +37,19 @@
     }
 
     &--pic1 {
-      display: block;
-      border: 2px solid white;
+      border: 1px solid white;
       border-radius: 1rem;
       box-shadow: 0 0 2rem rgba(0, 0, 0, 1);
-      width: 20rem;
-      transition: all 0.5s;
-      align-self: flex-start;
+      width: 22rem;
       grid-row: 2/3;
-      transition: all 1.5s;
+      // background-color: #9df;
+      background-image: url("./imgs/davekeithpic.jpg");
+      background-size: 110%;
+      background-position: center;
+      // background-blend-mode: normal;
+      min-height: 20rem;
+      cursor: pointer;
+      transition: all 1s;
 
       @media only screen and (max-width: $bp-medium) {
         grid-column: 1/-1;
@@ -48,10 +57,9 @@
       }
 
       &:hover {
-        border: none;
-        transform: scale(1.1);
-        margin-bottom: 1px;
-        transition: transform 1.5s;
+        //background-blend-mode: hard-light;
+        background-size: 130%;
+        transition: all 1s;
       }
     }
 

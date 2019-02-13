@@ -9,6 +9,10 @@
   );
   border-radius: 1rem;
 
+  * {
+    animation: grow 1s;
+  }
+
   &__links-container {
     margin: 4rem auto;
   }
@@ -41,6 +45,10 @@
   @media only screen and (max-width: $bp-small) {
     grid-template-columns: 30rem;
   }
+
+  * {
+    animation: grow 1s;
+  }
 }
 
 .image-div {
@@ -69,6 +77,10 @@
       rgba(220, 220, 220, 0.5)
     );
     transition: all 0.5s;
+
+    img {
+      filter: drop-shadow(0 0 1rem);
+    }
   }
 
   @media only screen and (max-width: $bp-medium) {
@@ -96,6 +108,7 @@
       display: block;
       margin: 0 auto;
       width: 25rem;
+      filter: drop-shadow(0 0 0.2rem) brightness(1.15);
     }
   }
 

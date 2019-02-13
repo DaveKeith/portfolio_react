@@ -9,6 +9,10 @@
     padding: 2rem;
     background-image: $faded-slightly;
 
+    * {
+      animation: grow 1s;
+    }
+
     div {
       margin: 1rem;
     }
@@ -32,31 +36,37 @@
     width: 60%;
   }
 
+  &__description {
+    margin: 4rem !important;
+  }
+
   &__link {
-    color: black;
+    color: white;
 
     &--details {
       font-weight: 400;
       border: $default-border;
       border-radius: 3rem 7rem;
       padding: 2rem;
-      background-image: linear-gradient(
-        to bottom,
-        rgba(#1e90ff, 0.3) -20%,
-        rgba(#1e90ff, 0.85),
-        rgba(#1e90ff, 0.3) 120%
-      );
-      transition: all 0.5s;
+      // background-image: linear-gradient(
+      //   to bottom,
+      //   rgba(#1e90ff, 0.3) -20%,
+      //   rgba(#1e90ff, 0.85),
+      //   rgba(#1e90ff, 0.3) 120%
+      // );
+      background-color: rgba(#1e90ff, 0.8);
+      transition: all 0.7s;
 
       &:hover {
         border: 3px solid black;
         border-radius: 7rem 3rem;
-        background-image: linear-gradient(
-          rgba(30, 144, 200, 0.7),
-          rgba(30, 144, 200, 0.7)
-        );
-        color: white;
-        transition: all 0.5s;
+        // background-image: linear-gradient(
+        //   rgba(30, 144, 200, 0.7),
+        //   rgba(30, 144, 200, 0.7)
+        // );
+        background-color: rgba(30, 150, 180, 0.6);
+        color: black;
+        transition: all 0.7s;
       }
     }
   }

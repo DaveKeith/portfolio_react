@@ -73,7 +73,7 @@ class App extends Component {
             <div />
             <div className="show__columns--dropdown">
               <Link to="/projects" onClick={this.delayHideAllDropdowns}>
-                Projects
+                Projects Home
               </Link>
               {this.getProjectList()}
             </div>

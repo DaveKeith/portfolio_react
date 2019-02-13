@@ -1,5 +1,4 @@
-import React, { Component, Fragment } from "react";
-import { Link } from "react-router-dom";
+import React, { Fragment } from "react";
 
 const Experience = () => {
   return (
@@ -7,11 +6,13 @@ const Experience = () => {
       <h1>Experience</h1>
       <div className="experience">
         <div className="experience__intro">
-          The "About" page was for some more personal detail. Here on the
-          "Experience" page, we can get some more in depth descriptions about my
-          professional experience and the organizations that I became a part of
-          and shaped who I am over the course of my adult life. A more stylish,
-          more in depth version of my paper resume so to speak.
+          <p>
+            The "About" page was for some more personal detail. Here on the
+            "Experience" page, we can get some more in depth descriptions about
+            my professional experience and the organizations that I became a
+            part of and shaped who I am over the course of my adult life. A more
+            stylish, more in depth version of my paper resume so to speak.
+          </p>
         </div>
         <nav className="experience__navbar navbar">
           <a href="#tts">Tech Talent South</a>

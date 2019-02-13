@@ -21,9 +21,11 @@ class Projects extends Component {
         <h1>Projects</h1>
         <div className="projects">
           <div className="projects__intro projects__section">
-            I have several work examples from my tenure at Diversey (spun off
-            from Sealed Air in 2017) but I also have several examples of my work
-            on GitHub as well.
+            <p>
+              I have several work examples from my tenure at Diversey (spun off
+              from Sealed Air in 2017) but I also have several examples of my
+              work on GitHub as well.
+            </p>
           </div>
           <div className="projects__diversey projects__section">
             <h2>Diversey Projects</h2>

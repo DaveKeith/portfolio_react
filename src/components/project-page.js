@@ -66,7 +66,7 @@ class ProjectPage extends Component {
       <Fragment>
         <h1>{this.state.data.projectName}</h1>
         <div className="project-description">
-          {this.state.data.description}
+          <p>{this.state.data.description}</p>
           {this.topUrls(this.state.data)}
         </div>
         <div id="image-grid">
