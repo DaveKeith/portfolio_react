@@ -6,77 +6,18 @@ import About from "./components/about";
 import Projects from "./components/projects";
 import Experience from "./components/experience";
 import ProjectPage from "./components/project-page";
+import Navbar from "./components/navbar";
 import Data from "./json/data.json";
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      aboutActive: "",
-      experienceActive: "",
-      projectsActive: "",
       dropdownElem: "hide",
       projectList: Data.projects
     };
     this.hideAllDropdowns = this.hideAllDropdowns.bind(this);
     this.projectsDropdown = this.projectsDropdown.bind(this);
-  }
-
-  navbar() {
-    if (window.location.pathname === "/") {
-      return (
-        <nav className="header-navbar navbar" id="top-of-page">
-          <Link
-            to="/"
-            className="navbar__active"
-            onClick={this.hideAllDropdowns}
-          >
-            About
-          </Link>
-          <Link to="/experience" onClick={this.hideAllDropdowns}>
-            Experience
-          </Link>
-          <div className="click-for-dropdown" onClick={this.projectsDropdown}>
-            Projects
-          </div>
-        </nav>
-      );
-    } else if (window.location.pathname === "/experience") {
-      return (
-        <nav className="header-navbar navbar" id="top-of-page">
-          <Link to="/" onClick={this.hideAllDropdowns}>
-            About
-          </Link>
-          <Link
-            to="/experience"
-            className="navbar__active"
-            onClick={this.hideAllDropdowns}
-          >
-            Experience
-          </Link>
-          <div className="click-for-dropdown" onClick={this.projectsDropdown}>
-            Projects
-          </div>
-        </nav>
-      );
-    } else {
-      return (
-        <nav className="header-navbar navbar" id="top-of-page">
-          <Link to="/" onClick={this.hideAllDropdowns}>
-            About
-          </Link>
-          <Link to="/experience" onClick={this.hideAllDropdowns}>
-            Experience
-          </Link>
-          <div
-            className="click-for-dropdown navbar__active"
-            onClick={this.projectsDropdown}
-          >
-            Projects
-          </div>
-        </nav>
-      );
-    }
   }
 
   hideAllDropdowns() {
@@ -114,7 +55,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header>{this.navbar()}</header>
+        <header>
+          <Navbar
+            hideDropdowns={this.hideAllDropdowns}
+            dropdown={this.projectsDropdown}
+          />
+        </header>
         <div className={`${this.state.dropdownElem}`}>
           <div className="show__columns">
             <div />
