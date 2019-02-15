@@ -24,10 +24,7 @@ class App extends Component {
     this.setState({
       dropdownElem: "hide"
     });
-  }
-
-  delayHideAllDropdowns() {
-    setTimeout(this.hideAllDropdowns(), 200);
+    return true;
   }
 
   projectsDropdown() {
@@ -38,18 +35,6 @@ class App extends Component {
     } else {
       this.hideAllDropdowns();
     }
-  }
-
-  getProjectList() {
-    return this.state.projectList.map(project => (
-      <Link
-        to={`/project/${project.projectId}`}
-        key={project.projectId}
-        target="_self"
-      >
-        {project.projectName}
-      </Link>
-    ));
   }
 
   render() {
@@ -66,10 +51,18 @@ class App extends Component {
             <div />
             <div />
             <div className="show__columns--dropdown">
-              <Link to="/projects" onClick={this.delayHideAllDropdowns}>
+              <Link to="/projects" onClick={this.hideAllDropdowns}>
                 Projects Home
               </Link>
-              {this.getProjectList()}
+              {this.state.projectList.map(project => (
+                <Link
+                  to={`/project/${project.projectId}`}
+                  key={project.projectId}
+                  onClick={this.hideAllDropdowns}
+                >
+                  {project.projectName}
+                </Link>
+              ))}
             </div>
           </div>
         </div>

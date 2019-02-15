@@ -5,11 +5,7 @@ import Data from "../json/data.json";
 class ProjectPage extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      data: Data.projects.find(project => {
-        return project.projectId == this.props.projectId;
-      })
-    };
+    this.state = {};
   }
 
   topUrls(obj) {
@@ -72,15 +68,19 @@ class ProjectPage extends Component {
   }
 
   render() {
+    let data = Data.projects.find(project => {
+      return project.projectId == this.props.projectId;
+    });
+
     return (
       <Fragment>
-        <h1>{this.state.data.projectName}</h1>
+        <h1>{data.projectName}</h1>
         <div className="project-description">
-          <p>{this.state.data.description}</p>
-          {this.topUrls(this.state.data)}
+          <p>{data.description}</p>
+          {this.topUrls(data)}
         </div>
         <div id="image-grid">
-          {this.state.data.project.map(image => (
+          {data.project.map(image => (
             <Link to={image.img} target="_self" className="image-div">
               <div className="image-div__section">
                 <div className="image-div__section--name">{image.name}</div>
