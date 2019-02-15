@@ -5,10 +5,10 @@ class Navbar extends Component {
   render() {
     if (window.location.pathname === "/") {
       return (
-        <nav className="header-navbar navbar" id="top-of-page">
+        <nav className="header-navbar">
           <Link
             to="/"
-            className="navbar__active"
+            className="navbar-active"
             onClick={this.props.hideDropdowns}
           >
             About
@@ -23,13 +23,13 @@ class Navbar extends Component {
       );
     } else if (window.location.pathname === "/experience") {
       return (
-        <nav className="header-navbar navbar" id="top-of-page">
+        <nav className="header-navbar" id="top-of-page">
           <Link to="/" onClick={this.props.hideDropdowns}>
             About
           </Link>
           <Link
             to="/experience"
-            className="navbar__active"
+            className="navbar-active"
             onClick={this.props.hideDropdowns}
           >
             Experience
@@ -41,7 +41,7 @@ class Navbar extends Component {
       );
     } else {
       return (
-        <nav className="header-navbar navbar" id="top-of-page">
+        <nav className="header-navbar" id="top-of-page">
           <Link to="/" onClick={this.props.hideDropdowns}>
             About
           </Link>
@@ -49,7 +49,7 @@ class Navbar extends Component {
             Experience
           </Link>
           <div
-            className="click-for-dropdown navbar__active"
+            className="click-for-dropdown navbar-active"
             onClick={this.props.dropdown}
           >
             Projects

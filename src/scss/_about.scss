@@ -42,11 +42,9 @@
       box-shadow: 0 0 2rem rgba(0, 0, 0, 1);
       width: 22rem;
       grid-row: 2/3;
-      // background-color: #9df;
       background-image: url("./imgs/davekeithpic.jpg");
       background-size: 110%;
       background-position: center;
-      // background-blend-mode: normal;
       min-height: 20rem;
       cursor: pointer;
       transition: all 1s;
@@ -57,7 +55,6 @@
       }
 
       &:hover {
-        //background-blend-mode: hard-light;
         background-size: 130%;
         transition: all 1s;
       }

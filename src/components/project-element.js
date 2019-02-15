@@ -7,16 +7,12 @@ class ProjectElement extends Component {
     this.state = {};
   }
 
-  goToTop() {
-    window.location.href += "#top-of-page";
-  }
-
   render() {
     return (
       <Link
         to={`/project/${this.props.id}`}
         className="projects__link"
-        onClick={this.goToTop}
+        target="_top"
       >
         <div className="projects__link--details">
           <h3>{this.props.name}</h3>

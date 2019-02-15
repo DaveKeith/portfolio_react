@@ -90,17 +90,15 @@ footer {
   }
 }
 
-.navbar {
-  &__active {
-    font-weight: 500;
-    border-bottom: 0.5rem solid white;
-    margin-bottom: 1px;
-    transition: none;
+.navbar-active {
+  font-weight: 500;
+  border-bottom: 0.5rem solid white;
+  margin-bottom: 1px;
+  transition: none;
 
-    &:hover {
-      transform: none !important;
-      box-shadow: none !important;
-    }
+  &:hover {
+    transform: none !important;
+    box-shadow: none !important;
   }
 }
 

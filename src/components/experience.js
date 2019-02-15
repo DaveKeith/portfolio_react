@@ -32,6 +32,8 @@ const Experience = () => {
               <li>
                 Sponsored by <a href="https://www.cognizant.com">Cognizant</a>,
                 one of the largest technogy consulting companies in the world
+                providing a curriculum geared specifically to educate for skills
+                that their clients are demanding.
               </li>
               <li>
                 An immersive software development environment, 8-5

@@ -21,7 +21,10 @@ const About = () => {
             accustomed to working in a wide array of work environments. On top
             of that, I'm very ambitious and willing to learn new technologies,
             and I believe my resume could speak to that (see my{" "}
-            <Link to="/experience#top-of-page">EXPERIENCE</Link> page).
+            <Link to="/experience" target="_top">
+              EXPERIENCE
+            </Link>{" "}
+            page).
           </span>
         </div>
         <div className="about__the-site">
@@ -53,7 +56,10 @@ const About = () => {
                 application and provide more automated functionality to the site
                 is a very important skill, so I thought I'd go ahead and include
                 an example on this site (under the{" "}
-                <Link to="/projects">PROJECTS</Link> pages).
+                <Link to="/projects" target="_top">
+                  PROJECTS
+                </Link>{" "}
+                pages).
               </li>
             </ul>
             <h5>GitHub URL: </h5>

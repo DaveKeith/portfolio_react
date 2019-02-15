@@ -93,6 +93,7 @@ class App extends Component {
                   "https://www.linkedin.com/in/david-keith-70704989?trk=nav_responsive_tab_profile"
                 }
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <img
                   title="LinkedIn"
@@ -100,7 +101,11 @@ class App extends Component {
                   src="https://socialmediawidgets.files.wordpress.com/2014/03/linkedin1.png"
                 />
               </a>
-              <a href="https://github.com/DaveKeith" target="_blank">
+              <a
+                href="https://github.com/DaveKeith"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src="../imgs/GitHub-Mark-64px.png" alt="GitHub" />
               </a>
             </div>

@@ -18,11 +18,19 @@ class ProjectPage extends Component {
         <div className="project-description__links-container">
           <div className="project-description__header-link">
             <span>GitHub URL:</span>
-            <a href={obj.githubUrl}>{obj.githubUrl}</a>
+            <a href={obj.githubUrl} target="_blank" rel="noopener noreferrer">
+              {obj.githubUrl}
+            </a>
           </div>
           <div className="project-description__header-link">
             <span>Deployment URL:</span>
-            <a href={obj.deploymentUrl}>{obj.deploymentUrl}</a>
+            <a
+              href={obj.deploymentUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {obj.deploymentUrl}
+            </a>
           </div>
         </div>
       );
@@ -31,7 +39,9 @@ class ProjectPage extends Component {
         <div className="project-description__links-container">
           <div className="project-description__header-link">
             <span>GitHub URL:</span>
-            <a href={obj.githubUrl}>{obj.githubUrl}</a>
+            <a href={obj.githubUrl} target="_blank" rel="noopener noreferrer">
+              {obj.githubUrl}
+            </a>
           </div>
         </div>
       );
@@ -43,19 +53,19 @@ class ProjectPage extends Component {
       return (
         <Fragment>
           <div className="image-div__section">
-            <a href={image.url} target="_blank">
+            <a href={image.url} target="_blank" rel="noopener noreferrer">
               {image.url}
             </a>
           </div>
           <div className="image-div__section">
-            <img src={image.img} />
+            <img src={image.img} alt={image.img} />
           </div>
         </Fragment>
       );
     } else {
       return (
         <div className="image-div__section">
-          <img src={image.img} />
+          <img src={image.img} alt={image.img} />
         </div>
       );
     }
