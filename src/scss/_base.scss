@@ -8,6 +8,7 @@ $faded-slightly: linear-gradient(
 );
 
 $default-border: 3px solid silver;
+$black-border: 3px solid black;
 
 //RESPONSIVE BREAKPOINTS
 $bp-largest: 75em; //1200px
@@ -15,6 +16,12 @@ $bp-large: 62.5em; //1000px
 $bp-medium: 50em; //800px
 $bp-small: 37.5em; //600px
 $bp-smallest: 25em; //400px
+
+@mixin nav-text {
+  font-size: 1.8rem;
+  text-decoration: none;
+  text-align: center;
+}
 
 @keyframes grow {
   from {
@@ -35,7 +42,7 @@ $bp-smallest: 25em; //400px
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%;
+  font-size: 62.5%; //1rem = 10px
 
   @media only screen and (max-width: $bp-large) {
     font-size: 50%; //1rem = 8px

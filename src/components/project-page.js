@@ -81,7 +81,11 @@ class ProjectPage extends Component {
         </div>
         <div id="image-grid">
           {data.project.map(image => (
-            <Link to={image.img} target="_self" className="image-div">
+            <Link
+              to={image.img}
+              target="_self"
+              className={`image-div ${data.projectName}`}
+            >
               <div className="image-div__section">
                 <div className="image-div__section--name">{image.name}</div>
               </div>

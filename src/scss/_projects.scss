@@ -52,7 +52,7 @@
       transition: all 0.7s;
 
       &:hover {
-        border: 3px solid black;
+        border: $black-border;
         border-radius: 7rem 3rem;
         background-color: rgba(30, 150, 180, 0.6);
         color: black;

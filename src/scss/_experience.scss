@@ -44,11 +44,9 @@
     }
 
     a {
-      text-decoration: none;
-      text-align: center;
+      @include nav-text;
       color: black;
       font-weight: 600;
-      font-size: 2rem;
       color: darkslategrey;
       transition: all 0.5s;
 
