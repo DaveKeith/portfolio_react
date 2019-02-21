@@ -3,15 +3,11 @@
   max-width: 100rem;
 
   &__section {
+    @include default-container;
     margin: 3rem 0 3rem 0;
-    border: $default-border;
-    border-radius: 1rem;
-    padding: 2rem;
     background-image: $faded-slightly;
 
-    * {
-      animation: grow 1s;
-    }
+    @include growChildren;
 
     div {
       margin: 1rem;
@@ -48,15 +44,14 @@
       border: $default-border;
       border-radius: 3rem 7rem;
       padding: 2rem;
-      background-color: rgba(#1e90ff, 0.8);
-      transition: all 0.7s;
+      background-color: rgba($blue1, 0.8);
+      @include transitionToAndFrom(all 0.7s);
 
       &:hover {
         border: $black-border;
         border-radius: 7rem 3rem;
-        background-color: rgba(30, 150, 180, 0.6);
+        background-color: rgba($teal, 0.6);
         color: black;
-        transition: all 0.7s;
       }
     }
   }

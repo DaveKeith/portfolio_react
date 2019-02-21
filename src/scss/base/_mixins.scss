@@ -1,0 +1,47 @@
+@mixin adjustPaddingAndMargin($screen-size, $padding, $margin) {
+  @media only screen and (max-width: $screen-size) {
+    padding: $padding;
+    margin: $margin;
+  }
+}
+
+@mixin default-container {
+  border: $default-border;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+@mixin gradientText($gradientColor) {
+  background-image: $gradientColor;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@mixin growChildren {
+  * {
+    animation: grow 1s;
+  }
+}
+
+@mixin largeAdjustableWidth {
+  width: 60rem;
+
+  @media only screen and (max-width: $bp-small) {
+    width: 32rem;
+  }
+}
+
+@mixin nav-text {
+  font-size: 1.8rem;
+  text-decoration: none;
+  text-align: center;
+}
+
+@mixin transitionToAndFrom($transition) {
+  transition: $transition;
+
+  &:hover {
+    transition: $transition;
+  }
+}

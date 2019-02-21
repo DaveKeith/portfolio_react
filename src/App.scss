@@ -1,8 +1,11 @@
-@import "scss/base.scss";
+@import "scss/base/variables.scss";
+@import "scss/base/animations.scss";
+@import "scss/base/mixins.scss";
+@import "scss/base/base-elements.scss";
 
-@import "scss/about.scss";
-@import "scss/experience.scss";
-@import "scss/header-footer.scss";
-@import "scss/projects-dropdown.scss";
-@import "scss/projects-page.scss";
-@import "scss/projects.scss";
+@import "scss/components/about.scss";
+@import "scss/components/experience.scss";
+@import "scss/components/projects-page.scss";
+@import "scss/components/projects.scss";
+@import "scss/layout/header-footer.scss";
+@import "scss/layout/projects-dropdown.scss";

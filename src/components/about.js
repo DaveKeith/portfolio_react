@@ -2,9 +2,9 @@ import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
 import DaveKeith from "../imgs/davekeithpic.jpg";
 
-function picPage() {
-  window.location.href = DaveKeith;
-}
+const picPage = () => {
+  window.open(DaveKeith, "_blank");
+};
 
 const About = () => {
   return (

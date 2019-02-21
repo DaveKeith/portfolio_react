@@ -3,30 +3,26 @@ footer {
   margin: 0;
   background-image: linear-gradient(
     to right,
-    #aaddff -10%,
-    #1e90ff,
-    #aaddff 110%
+    $blue-light -10%,
+    $blue1,
+    $blue-light 110%
   );
 
   @media only screen and (max-width: $bp-medium) {
     background-image: linear-gradient(
       to right,
-      #aaddff -25%,
-      #1e90ff,
-      #aaddff 125%
+      $blue-light -25%,
+      $blue1,
+      $blue-light 125%
     );
   }
 
   nav {
+    @include largeAdjustableWidth;
     color: white;
     margin: 0 auto;
-    width: 60rem;
     display: flex;
     justify-content: space-around;
-
-    @media only screen and (max-width: $bp-small) {
-      width: 32rem;
-    }
   }
 }
 
@@ -42,7 +38,7 @@ header {
 
     &:hover {
       transform: scaleX(0.9);
-      box-shadow: inset 0 0 2rem rgba(255, 255, 255, 1);
+      box-shadow: inset $white-box-shadow;
       transition: transform 0.5s, box-shadow 0.5s;
     }
   }
@@ -58,7 +54,7 @@ footer {
       width: 5rem;
       margin: 1rem;
       filter: drop-shadow(0.2rem 0.2rem 0.2rem rgb(0, 0, 0));
-      transition: all 0.5s;
+      @include transitionToAndFrom(all 0.5s);
 
       @media only screen and (max-width: $bp-small) {
         width: 3rem;
@@ -67,7 +63,6 @@ footer {
       &:hover {
         filter: drop-shadow(0.7rem 0.7rem 0.7rem rgb(0, 0, 0));
         transform: translateY(-0.5rem);
-        transition: all 0.5s;
       }
     }
 

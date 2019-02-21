@@ -1,0 +1,37 @@
+$blue1: #1e90ff;
+$blue2: #1e90c8;
+
+$blue-light: #aaddff;
+
+$teal: #1e96b4;
+
+$grey1: #dcdcdc;
+
+//*********************background-image variables*********************
+$faded-heavily: linear-gradient(
+  rgba(255, 255, 255, 0.9),
+  rgba(255, 255, 255, 0.9)
+);
+$faded-slightly: linear-gradient(
+  rgba(255, 255, 255, 0.5),
+  rgba(255, 255, 255, 0.5)
+);
+
+//*********************box-shadow variables*********************
+$black-box-shadow: 0 0 2rem rgb(0, 0, 0);
+$white-box-shadow: 0 0 2rem rgb(255, 255, 255);
+
+//*********************border variables*********************
+$default-border: 3px solid silver;
+$black-border: 3px solid black;
+
+//*********************images*********************
+$me: url("./imgs/davekeithpic.jpg");
+$bg: url("./imgs/the-blends-2-1156219.jpg");
+
+//*********************RESPONSIVE BREAKPOINTS*********************
+$bp-largest: 75em; //1200px
+$bp-large: 62.5em; //1000px
+$bp-medium: 50em; //800px
+$bp-small: 37.5em; //600px
+$bp-smallest: 25em; //400px

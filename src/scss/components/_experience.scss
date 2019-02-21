@@ -8,14 +8,9 @@
     border: $default-border;
     border-radius: 1rem;
 
-    @media only screen and (max-width: $bp-medium) {
-      padding: 2rem;
-      margin: 0 1rem 0 1rem;
-    }
+    @include adjustPaddingAndMargin($bp-medium, 2rem, 0 1rem 0 1rem);
 
-    * {
-      animation: grow 1s;
-    }
+    @include growChildren;
   }
 
   &__navbar {
@@ -48,12 +43,11 @@
       color: black;
       font-weight: 600;
       color: darkslategrey;
-      transition: all 0.5s;
+      @include transitionToAndFrom(all 0.5s);
 
       &:hover {
         color: black;
         transform: scale(1.2);
-        transition: all 0.5s;
       }
     }
   }
