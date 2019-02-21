@@ -1,9 +1,8 @@
 import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
-import DaveKeith from "../imgs/davekeithpic.jpg";
 
 const picPage = () => {
-  window.open(DaveKeith, "_blank");
+  window.open("/imgs/davekeithpic.jpg", "_blank");
 };
 
 const About = () => {
