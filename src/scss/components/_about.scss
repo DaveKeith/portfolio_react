@@ -33,20 +33,19 @@
     }
 
     &--pic1 {
-      border: 1px solid white;
       border-radius: 1rem;
       box-shadow: $black-box-shadow;
       width: 22rem;
       grid-row: 2/3;
       background-image: radial-gradient(
+          ellipse at bottom,
           rgba(255, 255, 255, 0.1) 50%,
-          rgba($blue2, 0.3) 70%,
-          rgba($blue1, 1)
+          rgba($blue1, 0.5) 75%
         ),
         $me;
       background-size: 110%;
       background-position: center;
-      min-height: 20rem;
+      min-height: 22rem;
       cursor: pointer;
       @include transitionToAndFrom(all 1s);
 
