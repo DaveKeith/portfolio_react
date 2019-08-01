@@ -145,8 +145,8 @@
     {
       "projectId": 5,
       "projectName": "The Spoon",
-      "githubUrl": "https://github.com/ttsdobc-dseb-proj01/recipe-list",
-      "deploymentUrl": "http://the-spoon.herokuapp.com/",
+      "githubUrl": "https://github.com/DaveKeith/recipe-list",
+      "deploymentUrl": "https://enigmatic-everglades-88944.herokuapp.com",
       "description": "A Java Spring-Boot application that allows users to share recipes. It allows users to create recipes, taking into account the ingredients and steps needed to create the recipe. Additionally, the user can browse a list of recipes select one, and read, update, or delete.",
       "project": [
         {

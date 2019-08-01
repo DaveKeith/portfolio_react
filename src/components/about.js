@@ -51,10 +51,14 @@ const About = () => {
                 been taken into consideration as well.
               </li>
               <li>
-                JSON - Using JSON input to fill state properties in a React
-                application and provide more automated functionality to the site
-                is a very important skill, so I thought I'd go ahead and include
-                an example on this site (under the{" "}
+                JSON - I used JSON unconventionally here, having a local file
+                within the src folder (it's usually set in a different location
+                and applied to a set to state property in a ReactJS class using
+                a setState function). However, since working with JSON provides
+                automated results crucial to the DRY concept (Don't Repeat
+                Yourself) is a very widely accepted practice in the development
+                community, I thought I'd go ahead and include an example on this
+                site (under the{" "}
                 <Link to="/projects" target="_top">
                   PROJECTS
                 </Link>{" "}

@@ -48,6 +48,7 @@
       background-position: center;
       min-height: 22rem;
       cursor: pointer;
+      animation: shrinkBGPic 1s;
       @include transitionToAndFrom(all 1s);
 
       @media only screen and (max-width: $bp-medium) {
