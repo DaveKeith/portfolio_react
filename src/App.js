@@ -40,7 +40,7 @@ class App extends Component{
             dropdown={this.projectsDropdown}
           />
         </header>
-        <div className={`${this.dropdownElem}`}>
+        <div className={`${this.state.dropdownElem}`}>
           <div className="show__columns">
             <div />
             <div />
