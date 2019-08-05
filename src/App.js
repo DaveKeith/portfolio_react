@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { Component } from "react";
 import { Route, Link } from "react-router-dom";
 import "./App.scss";
 
@@ -9,44 +9,50 @@ import ProjectPage from "./components/project-page";
 import Navbar from "./components/navbar";
 import Data from "./json/data.json";
 
-const App = (props) => {
-  const [dropdownElem, setDropdownElem] = useState("hide");
-  const projectList = Data.projects;
+class App extends Component{
+  constructor(props) {
+    super(props)
+    this.state = { dropdownElem: "hide" };
+    this.hideAllDropdowns = this.hideAllDropdowns.bind(this);
+    this.projectsDropdown = this.projectsDropdown.bind(this);
+  }
 
-  const hideAllDropdowns = () => {
-    setDropdownElem("hide")
+  hideAllDropdowns() {
+    this.setState({ dropdownElem: "hide" });
     return true;
   }
 
-  const projectsDropdown = () => {
-    if (dropdownElem === "hide") {
-      setDropdownElem("show");
+  projectsDropdown() {
+    if (this.state.dropdownElem === "hide") {
+      this.setState({ dropdownElem: "show" });
     } else {
-      hideAllDropdowns();
+      this.hideAllDropdowns();
     }
   }
 
-  return (
+  render(){
+    const projectList = Data.projects;
+    return (
       <div className="App">
         <header>
           <Navbar
-            hideDropdowns={hideAllDropdowns}
-            dropdown={projectsDropdown}
+            hideDropdowns={this.hideAllDropdowns}
+            dropdown={this.projectsDropdown}
           />
         </header>
-        <div className={`${dropdownElem}`}>
+        <div className={`${this.dropdownElem}`}>
           <div className="show__columns">
             <div />
             <div />
             <div className="show__columns--dropdown">
-              <Link to="/projects" onClick={hideAllDropdowns}>
+              <Link to="/projects" onClick={this.hideAllDropdowns}>
                 Projects Home
               </Link>
               {projectList.map(project => (
                 <Link
                   to={`/project/${project.projectId}`}
                   key={project.projectId}
-                  onClick={hideAllDropdowns}
+                  onClick={this.hideAllDropdowns}
                 >
                   {project.projectName}
                 </Link>
@@ -54,7 +60,7 @@ const App = (props) => {
             </div>
           </div>
         </div>
-        <div className="content" onClick={hideAllDropdowns}>
+        <div className="content" onClick={this.hideAllDropdowns}>
           <Route exact path="/" component={About} />
           <Route path="/projects" component={Projects} />
           <Route path="/experience" component={Experience} />
@@ -105,6 +111,7 @@ const App = (props) => {
         </footer>
       </div>
   );
+  }
 }
 
 export default App;
