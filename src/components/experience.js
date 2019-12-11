@@ -15,6 +15,7 @@ const Experience = () => {
           </p>
         </div>
         <nav className="experience__navbar navbar">
+          <a href="#cognizant">Cognizant</a>
           <a href="#tts">Tech Talent South</a>
           <a href="#diversey">Diversey</a>
           <a href="#tiy">The Iron Yard</a>
@@ -22,6 +23,29 @@ const Experience = () => {
           <a href="#navy">Navy</a>
           <a href="#edu">Before 2010</a>
         </nav>
+        <div id="cognizant" className="experience__place">
+          <h4>Cognizant (2019-)</h4>
+          <div className="experience__place--info">
+            <div className="experience__place--name">
+              Liberty Mutual
+            </div>
+            <ul>
+              <li>Location: Dover, New Hampshire</li>
+              <li>Collaborated in an agile system performing analysis, development, and testing on the Kanban board in Jira.</li>
+              <li>Ensured the integrity of the software by working with several large code bases and scomplex SQL databases among numerous development and testing environments.</li>
+            </ul>
+          </div>
+          <div className="experience__place--info">
+            <div className="experience__place--name">
+              MetLife
+            </div>
+            <ul>
+              <li>Location: Cary, North Carolina</li>
+              <li>Learned and worked with a ReactJS component-based framework specific to MetLife.</li>
+              <li>Assisted the development teams using DevOps software support tools such as ServiceNow sand Bamboo.</li>
+            </ul>
+          </div>
+        </div>
         <div id="tts" className="experience__place">
           <h4>Tech Talent South (2018-2019)</h4>
           <div className="experience__place--info">
