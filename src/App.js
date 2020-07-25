@@ -12,9 +12,9 @@ import Data from "./json/data.json";
 
 const App = () => {
   const projectList = Data.projects;
-  const [dropdownElem, setDropDownElem] = useState("hide")
+  const [dropdownElem, setDropdownElem] = useState("hide")
 
-  const setDropdownElem = () => {
+  const changeDropdownElem = () => {
     if (dropdownElem === "hide") {
       setDropdownElem("show");
     } else {
@@ -22,7 +22,7 @@ const App = () => {
     }
   }
   
-  const hideAllDropdowns = (){
+  const hideAllDropdowns = () => {
     setDropdownElem("hide");
   }
   
@@ -31,10 +31,10 @@ const App = () => {
         <header>
           <Navbar
             hideDropdowns={hideAllDropdowns}
-            dropdown={setDropdownElem}
+            dropdown={changeDropdownElem}
           />
         </header>
-        <div className={`${setDropdownElem}`}>
+        <div className={`${dropdownElem}`}>
           <div className="show__columns">
             <div />
             <div />
@@ -46,7 +46,7 @@ const App = () => {
                 <Link
                   to={`/project/${project.projectId}`}
                   key={project.projectId}
-                  onClick={this.hideAllDropdowns}
+                  onClick={hideAllDropdowns}
                 >
                   {project.projectName}
                 </Link>
