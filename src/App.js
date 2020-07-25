@@ -1,4 +1,5 @@
-import React, { Component } from "react";
+// import React, { Component } from "react";
+import React, { useState } from "react";
 import { Route, Link } from "react-router-dom";
 import "./App.scss";
 
@@ -9,43 +10,44 @@ import ProjectPage from "./components/project-page";
 import Navbar from "./components/navbar";
 import Data from "./json/data.json";
 
-class App extends Component{
-  constructor(props) {
-    super(props)
-    this.state = { dropdownElem: "hide" };
-    this.hideAllDropdowns = this.hideAllDropdowns.bind(this);
-    this.projectsDropdown = this.projectsDropdown.bind(this);
-  }
+const App = () => {
+// class App extends Component{
+  // constructor(props) {
+  //   super(props)
+  //   this.state = { dropdownElem: "hide" };
+  //   this.hideAllDropdowns = this.hideAllDropdowns.bind(this);
+  //   this.projectsDropdown = this.projectsDropdown.bind(this);
+  // }
 
-  hideAllDropdowns() {
-    this.setState({ dropdownElem: "hide" });
-    return true;
-  }
+  const projectList = Data.projects;
+  const [dropdownElem, setDropDownElem] = useState("hide")
 
-  projectsDropdown() {
-    if (this.state.dropdownElem === "hide") {
-      this.setState({ dropdownElem: "show" });
+  const setDropdownElem = () => {
+    if (dropdownElem === "hide") {
+      setDropdownElem("show");
     } else {
-      this.hideAllDropdowns();
+      setDropdownElem("hide");
     }
   }
-
-  render(){
-    const projectList = Data.projects;
-    return (
+  
+  const hideAllDropdowns = (){
+    setDropdownElem("hide");
+  }
+  
+  return (
       <div className="App">
         <header>
           <Navbar
-            hideDropdowns={this.hideAllDropdowns}
-            dropdown={this.projectsDropdown}
+            hideDropdowns={hideAllDropdowns}
+            dropdown={setDropdownElem}
           />
         </header>
-        <div className={`${this.state.dropdownElem}`}>
+        <div className={`${setDropdownElem}`}>
           <div className="show__columns">
             <div />
             <div />
             <div className="show__columns--dropdown">
-              <Link to="/projects" onClick={this.hideAllDropdowns}>
+              <Link to="/projects" onClick={hideAllDropdowns}>
                 Projects Home
               </Link>
               {projectList.map(project => (
@@ -60,7 +62,7 @@ class App extends Component{
             </div>
           </div>
         </div>
-        <div className="content" onClick={this.hideAllDropdowns}>
+        <div className="content" onClick={hideAllDropdowns}>
           <Route exact path="/" component={About} />
           <Route path="/projects" component={Projects} />
           <Route path="/experience" component={Experience} />
@@ -111,7 +113,6 @@ class App extends Component{
         </footer>
       </div>
   );
-  }
 }
 
 export default App;
