@@ -59,6 +59,7 @@ const secUrls = image => {
 
 const ProjectPage = props => {
   const data = Data.projects.find(project => {
+    // eslint-disable-next-line
     return project.projectId == props.projectId;
   });
 

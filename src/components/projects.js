@@ -27,7 +27,11 @@ const Projects = props => {
           <div className="projects__description">
             During late 2016 and intermittently throughout 2017, I was the sole
             developer for{" "}
-            <a href="http://diverseydigital.com/natools/" target="_blank">
+            <a 
+              href="http://diverseydigital.com/natools/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
               NaTools
             </a>
             , which was a source for product reference for both Diversey
