@@ -11,14 +11,6 @@ import Navbar from "./components/navbar";
 import Data from "./json/data.json";
 
 const App = () => {
-// class App extends Component{
-  // constructor(props) {
-  //   super(props)
-  //   this.state = { dropdownElem: "hide" };
-  //   this.hideAllDropdowns = this.hideAllDropdowns.bind(this);
-  //   this.projectsDropdown = this.projectsDropdown.bind(this);
-  // }
-
   const projectList = Data.projects;
   const [dropdownElem, setDropDownElem] = useState("hide")
 

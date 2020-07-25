@@ -15,6 +15,7 @@ const Experience = () => {
           </p>
         </div>
         <nav className="experience__navbar navbar">
+          <a href="#lowes">Lowes</a>
           <a href="#cognizant">Cognizant</a>
           <a href="#tts">Tech Talent South</a>
           <a href="#diversey">Diversey</a>
@@ -23,6 +24,20 @@ const Experience = () => {
           <a href="#navy">Navy</a>
           <a href="#edu">Before 2010</a>
         </nav>
+        <div id="lowes" className="experience__place">
+          <div className="experience__place--info">
+            <div className="experience__place--name">
+              Lowes
+            </div>
+            <ul>
+              <li>Location: Mooresville, North Carolina</li>
+              <li>Valuable member of the Customer Domain team responsible for the frontend development related to the login and profile pages for www.lowes.com</li>
+              <li>Collaborated with development teams to colete a wide variety of use cases in an agile environment</li>
+              <li>Underwent a variety of challengels such as downsizing and syching a new cloud-based code with an older code base</li>
+              <li>Developed with frontend technologies such as Javascript, NodeJS, HapiJS, and Handlebars</li>
+            </ul>
+          </div>
+        </div>
         <div id="cognizant" className="experience__place">
           <h4>Cognizant (2019-)</h4>
           <div className="experience__place--info">
