@@ -25,10 +25,8 @@ const Experience = () => {
           <a href="#edu">Before 2010</a>
         </nav>
         <div id="lowes" className="experience__place">
+          <h4>Lowes (2020)</h4>
           <div className="experience__place--info">
-            <div className="experience__place--name">
-              Lowes
-            </div>
             <ul>
               <li>Location: Mooresville, North Carolina</li>
               <li>Valuable member of the Customer Domain team responsible for the frontend development related to the login and profile pages for www.lowes.com</li>
@@ -39,7 +37,7 @@ const Experience = () => {
           </div>
         </div>
         <div id="cognizant" className="experience__place">
-          <h4>Cognizant (2019-)</h4>
+          <h4>Cognizant (2019-2020)</h4>
           <div className="experience__place--info">
             <div className="experience__place--name">
               Liberty Mutual
