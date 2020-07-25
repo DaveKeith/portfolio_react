@@ -1,4 +1,3 @@
-// import React, { Component } from "react";
 import React, { useState } from "react";
 import { Route, Link } from "react-router-dom";
 import "./App.scss";
@@ -12,7 +11,7 @@ import Data from "./json/data.json";
 
 const App = () => {
   const projectList = Data.projects;
-  const [dropdownElem, setDropdownElem] = useState("hide")
+  const [dropdownElem, setDropdownElem] = useState("hide");
 
   const changeDropdownElem = () => {
     if (dropdownElem === "hide") {
@@ -36,8 +35,8 @@ const App = () => {
         </header>
         <div className={`${dropdownElem}`}>
           <div className="show__columns">
-            <div />
-            <div />
+            <div className="faux-column" />
+            <div className="faux-column" />
             <div className="show__columns--dropdown">
               <Link to="/projects" onClick={hideAllDropdowns}>
                 Projects Home

@@ -74,6 +74,7 @@ const ProjectPage = props => {
           <Link
             to={image.img}
             target="_blank"
+            rel="noopener noreferrer"
             className={`image-div ${data.projectName}`}
           >
             <div className="image-div__section">
